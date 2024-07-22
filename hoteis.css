@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    padding: 20px;
+
+
+}
+
+nav {
+    background-color: royalblue;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+
+main {
+    padding: 20px;
+}
+
+
+footer {
+
+    background-color: black;
+    color: snow;
+    justify-content: center;
+
+
+}

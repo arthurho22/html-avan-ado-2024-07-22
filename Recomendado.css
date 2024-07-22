@@ -1,0 +1,75 @@
+body{
+    margin: 0px;
+    display: flex;
+}
+
+main{
+    width: calc(100vw - 500px);
+}
+
+aside.sidebar-esquerda,
+aside.sidebar-direita{
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+aside.sidebar-esquerda ul,
+aside.sidebar-direita ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+aside.sidebar-direita ul{
+    margin: 0px;
+}
+
+aside.sidebar-esquerda ul li,
+aside.sidebar-direita ul li{
+    padding: 10px;
+    cursor: pointer;
+}
+aside.sidebar-esquerda ul li:hover,
+aside.sidebar-direita ul li:hover{
+    background-color: #575757;
+}
+
+aside.sidebar-direita ul ul{
+    list-style-type: none;  /*Remove os marcadores*/
+    padding-left: 10px; /*Define um espaçamento à esquerda de 10 pixels para os elementos*/
+
+    transition: max-height 0.8; /* Define uma transição suave para a propriedade max-height, com duração de 0.7 segundos. */
+    overflow: hidden; /* garante que qualquer conteúdo que ultrapasse a altura definida (max-height) não seja exibido durante a transição. */
+    max-height: 0px;
+}
+aside.sidebar-direita ul li:hover > ul{
+    max-height: 500px;
+}
+
+aside.sidebar-direita ul ul li{
+    padding: 10px;
+}
+
+aside.sidebar-direita ul ul li:hover{
+    background-color: red;
+}
+
+.hidden-items{
+    display: none;
+}
+
+.toggle-button {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #575757;
+}

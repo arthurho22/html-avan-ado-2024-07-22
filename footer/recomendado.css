@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+
+}
+
+nav{
+   
+    background-color: dodgerblue;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav a{
+    text-decoration: none;
+     color: black ;
+}
+
+nav a:hover{
+    color: yellow pgb(102,202,302); /*perguntar pro profesor o que é */
+}
+
+
+
+footer {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+
+}
+
+main article h1{
+    text-align: center;
+}
+
+div.pokedex {
+    display: flex;
+    overflow: hidden;
+    margin: 0px 100px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    flex-direction: column;
+}
+
+div.pokedex article {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+div.pokedex article h2 {
+    margin: 0px;
+    text-align: center;
+}
+
+div.pokedex article img {
+    width: 250px;
+}
+
+div.pokedex figcaption {
+    max-width: 250px;
+}
